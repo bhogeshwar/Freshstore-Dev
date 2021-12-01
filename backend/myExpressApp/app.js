@@ -24,6 +24,12 @@ app.use(cors({
 app.use('/api/products', productsRoute);
 app.use('/api/orders', ordersRoute);
 
+app.use(express.static(root : __dirname + '/dist'));
 
+
+
+app.listen(port: process.env.PORT || 3000, callback: function () {
+  console.log("listening on http://localhost:3000");
+});
 
 module.exports = app;
