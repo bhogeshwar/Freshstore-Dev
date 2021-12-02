@@ -36,7 +36,8 @@ router.get('/', function (req, res) {
       'p.price',
       'p.quantity',
       'p.images',
-      'p.id'
+      'p.id',
+      'p.image'
     ])
 
     .slice(startValue, endValue)
@@ -77,6 +78,7 @@ router.get('/:prodid', (req, res) => {
       'p.title as name',
       'p.price',
       'p.quantity',
+      'p.image',
       'p.images',
       'p.id'
     ])
@@ -135,7 +137,8 @@ router.get('/category/:catName', (req, res) => {
       'p.price',
       'p.quantity',
       'p.images',
-      'p.id'
+      'p.id',
+      'p.image'
     ])
 
     .slice(startValue, endValue)
